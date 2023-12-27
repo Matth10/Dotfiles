@@ -18,6 +18,7 @@
         pl = "!git pull origin $(git rev-parse --abbrev-ref HEAD)"
         st = status
         br = branch
+        cundo = reset --soft HEAD~
         ba = branch -a
         bm = branch --merged
         bn = branch --no-merged
@@ -61,3 +62,6 @@
 
 [init]
 	defaultBranch = main
+[user]
+	name = Matthew
+	email = matthew.atkinson@protonmail.com
