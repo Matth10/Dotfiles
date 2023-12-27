@@ -21,4 +21,18 @@ then
 
 fi
 
+brew install "ghq"
+brew install "pyenv"
+brew install "jq"
+brew install "neovim"
+brew install "node"
+brew install "eza"
+brew install "bat"
+brew install "hub"
+brew install "tmux"
+brew install "ripgrep"
+brew install "fd"
+brew install "fzf"
+brew install "watchman"
+
 exit 0

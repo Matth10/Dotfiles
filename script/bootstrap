@@ -137,8 +137,16 @@ install_dotfiles () {
   done
 }
 
+move_config_folders() {
+	echo -e "Moving .config folders to home directory"
+	cp -r $HOME/dotfiles/nvim ~/.config/
+	cp -r $HOME/dotfiles/tmux ~/.config/
+	echo -e " Files are safely moved to home directory"
+}
+
 setup_gitconfig
 install_dotfiles
+move_config_folders
 
 # If we're on a Mac, let's install and setup homebrew.
 if [ "$(uname -s)" == "Darwin" ]
