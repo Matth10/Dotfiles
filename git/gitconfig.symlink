@@ -63,5 +63,7 @@
 [init]
 	defaultBranch = main
 [user]
-	name = Matthew
+	name = Matth10
 	email = matthew.atkinson@protonmail.com
+[url "git@github.com:"]
+ insteadOf = https://github.com/
