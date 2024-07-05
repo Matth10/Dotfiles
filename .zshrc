@@ -52,16 +52,3 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
-# Sweep configuration
-## Source the CLI entry point for sweep script in the sweep directory
-source "$HOME/Documents/sweep-net/sweep/sweep"
-## Export all necessary constants
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-eval $(sweep env read-dev backend)
-eval $(sweep env read-dev-eng backend)
-eval "$(nodenv init -)"
-eval "$(rbenv init - zsh)"
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
